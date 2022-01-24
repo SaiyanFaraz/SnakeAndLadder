@@ -43,7 +43,7 @@ public class SnakeAndLadder
 						else
 						{
 							PlayerTwoCount=PlayerTwoCount+ladder;
-						if (PlayerOneCount>WIN)
+						if (PlayerTwoCount>WIN)
 						{
 							PlayerTwoCount=PlayerTwoCount-ladder;
 						}	
@@ -67,26 +67,26 @@ public class SnakeAndLadder
 				}
 		if(PlayerOneCount<=0)
 		{
-			System.out.print("Player1 is restarting from Zero: ");
+			System.out.print("Player 1 is restarting from Zero: ");
 			PlayerOneCount=0;
 
 		}
 		else if(PlayerOneCount==WIN)
 		{
 			
-			System.out.println("Player1 reached " +WIN + " And won the game");
+			System.out.println("Player 1 reached " +WIN + " And won the game");
 			break;
 		}
 		if(PlayerTwoCount<=0)
 		{
-			System.out.print("Player2 is restarting from Zero: ");
+			System.out.print("Player 2 is restarting from Zero: ");
 			PlayerTwoCount=0;
 
 		}
 		else if(PlayerTwoCount==WIN)
 		{
 			
-			System.out.println("Player2 reached " +WIN + " And won the game");
+			System.out.println("Player 2 reached " +WIN + " And won the game");
 			break;
 		}
 		System.out.println("Player 1 count = "+PlayerOneCount);
